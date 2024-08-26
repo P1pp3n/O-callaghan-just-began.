@@ -430,7 +430,9 @@ nav ul li a {
 #contact form button:hover {
     background-color: #0056b3;
 }
-
+#IT,#LT,#MT,#ET{
+    text-align: center;
+}
 
 /* Footer */
 footer {

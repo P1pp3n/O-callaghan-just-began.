@@ -1,104 +1,112 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
     <head>
         <title>Table and other topics</title>
-    </head>
-    <body>
-        <style type="text/css">
-            body{
+                <style type="text/css">
+            body {
                 background-color: aliceblue;
                 font-family: Arial;
             }
-            .Nem{
+            .Nem {
                 padding-top: 2px;
                 padding-bottom: 2px;
-                
+
                 margin-bottom: 2px;
             }
-            h1,h3{
+            h1,
+            h3 {
                 color: #464575;
             }
         </style>
-        <h1 >The Daily 3 Feedback and Report</h1><br/>
-        <script >document.write('<h3>Welcome!</h3>');</script><br/>
+    </head>
+    <body>
+
+        <h1>The Daily 3 Feedback and Report</h1>
+        <br />
+        <script>
+            document.write("<h3>Welcome!</h3>");
+        </script>
+        <script >
+            document.write("<h4>Sign up to recieve our newsletter for 10% off!</h4>");
+        </script>
+        <br />
         <fieldset id="Wan">
             <legend>Personal Info</legend>
-            <label >Name:<input type="text" name="Username" class="Nem"></label>
-            <br/>
-            <label>Age:<input type="text" name="Userage" class="Nem"></label>
-            <br/>
+            <label>Name:<input type="text" name="Username" class="Nem" /></label>
+            <br />
+            <label>Age:<input type="text" name="Userage" class="Nem" /></label>
+            <br />
             Gender:
-            <input id="female" type="radio" name="gender"
-            value="f">
+            <input id="female" type="radio" name="gender" value="f" />
             <label for="female">Female</label>
-            <input id="male" type="radio" name="gender"
-            value="m">
+            <input id="male" type="radio" name="gender" value="m" />
             <label for="male">Male</label>
         </fieldset>
-        <hr/>
-        <h3>Your Report</h3>        
-        <table width="400" border="1" cellpadding="2" cellspacing="0" bgcolor="#efefef">
+        <hr />
+        <h3>Your Report</h3>
+        <table >
             <tr>
-                <th>Daily 3 </th>
-                <th width="100" align="center">Score per week</th>    <th width="100" align="center">Score per month</th>            
+                <th>Daily 3</th>
+                <th >Score per week</th>
+                <th >Score per month</th>
             </tr>
             <tr>
-                <th width="100">Morning Pages</th>
-                <td width="100" align="center">6</td>
-                <td width="100" align="center">27</td>
+                <th >Morning Pages</th>
+                <td >6</td>
+                <td >27</td>
             </tr>
             <tr>
-                <th width="100">Daily Movement</th>
-                <td width="100" align="center">6</td>
-                <td width="100" align="center">23</td>
+                <th >Daily Movement</th>
+                <td >6</td>
+                <td >23</td>
             </tr>
             <tr>
-                <th width="100">Daily Meditation</th>
-                <td width="100" align="center">3</td>
-                <td width="100" align="center">17</td>
+                <th >Daily Meditation</th>
+                <td >3</td>
+                <td >17</td>
             </tr>
         </table>
-        <hr/>
-        <br/>
-            <h3>Feedback</h3>
-        
+        <hr />
+        <br />
+        <h3>Feedback</h3>
+
         <form>
             <fieldset>
-            <legend>Your Review</legend>
-            <p>Which Daily 3 do you find difficult to do?
-            <br />
-            <input type="radio" name="genre" value="morning pages" checked="checked">Morning Pages
-                <input type="radio" name="genre" value="meditation" >Meditation
-                <input type="radio" name="genre" value="movement" >Movement
+                <legend>Your Review</legend>
+                <p>
+                    Which Daily 3 do you find difficult to do?
+                    <br />
+                    <input type="radio" name="genre" value="morning pages" checked="checked" />Morning Pages
+                    <input type="radio" name="genre" value="meditation" />Meditation
+                    <input type="radio" name="genre" value="movement" />Movement
                 </p>
-            
-            <p>Which of the Daily 3 do you enjoy doing?(You can select all)<br/>
-                <input type="checkbox" name="genre" value="morning pages" checked="checked">Morning Pages
-                <input type="checkbox" name="genre" value="meditation">Mediatation
-                <input type="checkbox" name="genre" value="movement">Movement
-            </p>
-            <p>Which Daily 3would you drop?</p>
-            <select name="genre">
-                <option value="morning  pages">Morning Pages</option>
-                <option value="meditation">Meditation</option>
-                <option value="movement">Movement</option>
-            </select>
-            <p>Why would you drop it?</p>
-            <textarea cols="20" row="4" placeholder="Enter your comment here.."></textarea>
-            <p>Please upload a file of proof for the Daily 3.</p>
-            <input type="file" name="proof"><br />
-            <input type="submit" value="upload"><br/>
-            <label>
-             <input type="checkbox" name="subscribe" checked="checked" />
-             Sign me up for email updates
-             </label>
-             <br />
-             <input type="submit" value="Submit review" />
+
+                <p>
+                    Which of the Daily 3 do you enjoy doing?(You can select all)<br />
+                    <input type="checkbox" name="genre" value="morning pages" checked="checked" />Morning Pages
+                    <input type="checkbox" name="genre" value="meditation" />Mediatation
+                    <input type="checkbox" name="genre" value="movement" />Movement
+                </p>
+                <p>Which Daily 3would you drop?</p>
+                <select name="genre">
+                    <option value="morning  pages">Morning Pages</option>
+                    <option value="meditation">Meditation</option>
+                    <option value="movement">Movement</option>
+                </select>
+                <p>Why would you drop it?</p>
+                <textarea cols="20" row="4" placeholder="Enter your comment here.."></textarea>
+                <p>Please upload a file of proof for the Daily 3.</p>
+                <input type="file" name="proof" /><br />
+                <input type="submit" value="upload" /><br />
+                <label>
+                    <input type="checkbox" name="subscribe" checked="checked" />
+                    Sign me up for email updates
+                </label>
+                <br />
+                <input type="submit" value="Submit review" />
             </fieldset>
-            </form>
+        </form>
         <p>&copy;What I just learnt</p>
-            <script>
-                 
-        </script>
+        <script></script>
     </body>
 </html>
